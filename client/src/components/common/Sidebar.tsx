@@ -202,7 +202,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
               </svg>
             </div>
             <div>
-              <h1 className="text-lg font-bold text-sidebar-foreground">College ERP</h1>
+              <h1 className="text-lg font-bold text-sidebar-foreground">SRIT</h1>
               <p className="text-xs text-sidebar-foreground/60 capitalize">{user.role} Portal</p>
             </div>
           </div>

@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import DashboardLayout from "./layouts/DashboardLayout";
 import Login from "./pages/Login";
+import HomePage from "./pages/HomePage";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminDepartments from "./pages/admin/AdminDepartments";
 import AdminSections from "./pages/admin/AdminSections";
@@ -49,8 +50,8 @@ function AppRoutes() {
   
   return (
     <Routes>
+      <Route path="/" element={<HomePage />} />
       <Route path="/login" element={isAuthenticated ? <Navigate to={`/${user?.role}`} replace /> : <Login />} />
-      <Route path="/" element={<Navigate to="/login" replace />} />
       
       {/* Admin Routes */}
       <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><DashboardLayout /></ProtectedRoute>}>
