@@ -251,7 +251,7 @@
     to { opacity: 1; transform: translateX(0); }
   }
 
-  /* News Ticker Animation - Right to Left */
+  /* News Ticker Animation - Left to Right Scroll */
   @keyframes ticker-scroll {
     0% {
       transform: translateX(0);
@@ -261,7 +261,7 @@
     }
   }
 
-  /* Industry Partners Marquee Animation - Right to Left */
+  /* Industry Partners Marquee Animation - Left to Right Scroll */
   @keyframes marquee {
     0% {
       transform: translateX(0);
