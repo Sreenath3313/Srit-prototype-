@@ -154,11 +154,11 @@ export const Header: React.FC = () => {
 
       {/* Ticker */}
       <div className="bg-primary text-white py-2 overflow-hidden relative flex items-center ticker-wrapper">
-          <div className="absolute left-0 bg-primary z-10 px-4 py-2 font-bold shadow-lg">
+          <div className="absolute left-0 bg-primary z-10 px-4 py-2 font-bold shadow-lg whitespace-nowrap">
               LATEST NEWS
           </div>
           <div className="w-full overflow-hidden flex pl-32">
-              <div className="ticker-text text-sm font-medium">
+              <div className="ticker-text text-sm font-medium whitespace-nowrap inline-block">
                   {latestNews} {latestNews}
               </div>
           </div>
